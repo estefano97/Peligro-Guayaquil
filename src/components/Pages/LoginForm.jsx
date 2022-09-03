@@ -1,27 +1,36 @@
-import React from "react"
+import React from "react";
 import InputForm from "../shared/InputForm";
-import styles from "../styles/Login.module.css";
+import styles from "../styles/LoginForm.module.css";
 //import "./Login" nUNCA DEBES IMPORTAR EL PADRE DENTRO DEL COMPONENTE HIJO
 
 const LoginForm = () => {
-    return (
-      <form className='logear'>
-        <h1>Login</h1> <b>G</b> <h4>Peligro Guayaquil</h4>
-        {/* <label>Nombres</label>
-        <input type="text" className="name" placeholder="ingrese su nombre"/>
-        <br/> */}
+  return (
+    <div className={styles.loginFormContainer}>
+      <div className={styles.loginFormText}>
+        <div className={styles.TextPrincipal}>
+        <h2>Login</h2> / <h4>sign up</h4>
+        </div>
+        <div>
+          <p>No tienes cuenta?</p>
+        </div>
+      </div>
+      <form className={styles.logear}>
+        <InputForm type="text" valor="Nombre" name="Your name" />
+
+        <InputForm type="text" valor="Apellido" name="Surname" />
+
+        <InputForm type="email" valor="Email" name="Email" />
         
-        <InputForm valor="text" name="Your name"/>
+        <InputForm type="number" valor="Celular" name="Celular" />
 
-        <InputForm valor="text" name="Surname"/>
+        <InputForm type="password" valor="Password" name="Password" />
 
-        <InputForm valor="email" name="Email"/>
-
-        <InputForm valor="password" name="Password"/>
-
-        <button className={styles.buttonSubmit} type="submit" value="Submit" >Register</button>
+        <button className={styles.buttonSubmit} type="submit" value="Submit">
+          Register
+        </button>
       </form>
-    )
-  };
-  
-  export default LoginForm;
+    </div>
+  );
+};
+
+export default LoginForm;
