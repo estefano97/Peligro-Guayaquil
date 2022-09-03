@@ -1,11 +1,16 @@
 import React from 'react'
+//import "App.js" OTRA VEZ, NUNCA DEBES IMPORTAR EL PADRE DENTRO DEL COMPONENTE HIJO
+import styles from "../styles/Login.module.css";
+import LoginForm from './LoginForm.jsx';
 
 const Login = () => {
   return (
-    <div>
-        <h1>Bienvenido a mi sitio!, dianita, has aqui el login pls, puedes crear tus propios componentes, para que el codigo no sea tan grande</h1>
+    <div className={styles.login}>
+      <div className={styles.LoginImageContainer}>
+      </div>
+      <LoginForm/>
     </div>
   )
-}
+};
 
 export default Login;

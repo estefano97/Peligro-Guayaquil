@@ -1,0 +1,32 @@
+.login{
+    width: 60vw;
+    height: 90vh;
+    margin: 2rem auto;
+    border-radius: 20px;
+    box-shadow: 0 0.188em 1.550em rgb(108, 100, 156);
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    color: cornflowerblue;
+}
+
+.LoginImageContainer{
+    background: url("/src/components/imag/Ciudad_Mitad_del_Mundo.jpg") no-repeat center;
+}
+
+.LoginImageContainer{
+    width: 90%;
+    background-color: cornflowerblue;
+}
+
+
+.buttonSubmit{
+    background-color:cornflowerblue;
+    color: white;    
+    border-radius: 1rem;
+    padding: 8px;
+    margin-top: 1rem;
+    border-color: white;
+    width: 60%;
+    text-align: center;
+}
