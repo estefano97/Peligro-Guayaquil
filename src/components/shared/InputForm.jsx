@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../styles/LoginForm.module.css";
+import styles from "./InputForm.module.css";
 
 const InputForm = (props) => {
   
@@ -11,4 +11,4 @@ const InputForm = (props) => {
   )
 }
 
-export default InputForm 
+export default InputForm; 

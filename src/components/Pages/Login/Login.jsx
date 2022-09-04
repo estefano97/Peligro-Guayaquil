@@ -1,8 +1,8 @@
 import React from 'react'
 //import "App.js" OTRA VEZ, NUNCA DEBES IMPORTAR EL PADRE DENTRO DEL COMPONENTE HIJO
-import styles from "../styles/Login.module.css";
+import styles from "./styles/Login.module.css";
 import LoginForm from './LoginForm.jsx';
-import securityIcon from "../img/security-camera.svg";
+import securityIcon from "../../img/security-camera.svg";
 
 const Login = () => {
   return (
@@ -11,11 +11,11 @@ const Login = () => {
       <div className={styles.LoginImageContainer}>
         <img src={securityIcon} alt="" />
         <h1>Welcome</h1>
-        <p>dianita el buebo me come ekisde.</p>
+        <p>You are on the alert information site.</p>
         <ul>
-          <li>asdadsdsadsasddassadass</li>
-          <li>asdadsdsadsasddassadass</li>
-          <li>asdadsdsadsasddassadass</li>
+          <li>create your account if you don't have one</li>
+          <li>You can find the most dangerous places with us.</li>
+          <li>share your information with us</li>
         </ul>
       </div>
       <LoginForm/>

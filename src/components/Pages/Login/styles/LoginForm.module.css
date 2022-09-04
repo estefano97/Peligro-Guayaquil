@@ -1,0 +1,51 @@
+.logear{
+    height: 80%;
+    width: 90%;
+    margin: .5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .loginFormContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 60%;
+}
+
+.loginFormText{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.loginFormText p{
+    color: gray;
+    font-size: .8rem;
+}
+
+.TextPrincipal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+}
+  
+.buttonSubmit{
+    background-color:cornflowerblue;
+    color: white;    
+    border-radius: 16px;
+    padding: .5rem 0;
+    width: 30%;
+    margin-left: 10%;
+    align-self: flex-start;
+    margin-top: 1rem;
+    border-color: white;
+    text-align: center;
+}

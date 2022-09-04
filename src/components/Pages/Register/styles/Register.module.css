@@ -1,4 +1,4 @@
-.LoginBody{
+.RegisterBody{
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -6,9 +6,9 @@
     background-color: rgba(47, 70, 113, 0.75);
 }
 
-.LoginBody::after {
+.RegisterBody::after {
     content: "";
-    background: url("../img/Ecuador-lugares-Quito-Enviajes.jpg") no-repeat center;
+    background: url("/src/components/img/Ecuador-lugares-Quito-Enviajes.jpg") no-repeat center;
     top: 0;
     left: 0;
     bottom: 0;
@@ -18,7 +18,7 @@
     z-index: -1;   
   }
 
-.login{
+.Register{
     width: 85vw;
     height: 90vh;
     margin: 2rem auto;
@@ -31,7 +31,7 @@
     background-color: white;
 }
 
-.LoginImageContainer{
+.RegisterImageContainer{
     position: relative;
     display: flex;
     align-items: center;
@@ -40,21 +40,21 @@
     height: 100%;
     border-radius: 2px;
     width: 40%;
-    background-color: rgba(100, 149, 237, .75);
+    background-color: rgba(76, 84, 99, 0.75);
     font-size: .8rem;
     color: white;
     text-align: center;
 }
 
-.LoginImageContainer > *{
+.RegisterImageContainer > *{
     z-index: 10;
 }
 
-.LoginImageContainer > img{
+.RegisterImageContainer > img{
     width: 3rem;
 }
 
-.LoginImageContainer::after {
+.RegisterImageContainer::after {
     content: "";
     background: url("/src/components/img/Ciudad_Mitad_del_Mundo.jpg") no-repeat center;
     opacity: 0.3;

@@ -1,20 +1,21 @@
 import React from "react";
-import InputForm from "../shared/InputForm";
-import styles from "../styles/LoginForm.module.css";
-//import "./Login" nUNCA DEBES IMPORTAR EL PADRE DENTRO DEL COMPONENTE HIJO
+import { NavLink } from "react-router-dom";
+import InputForm from "../../shared/InputForm";
+import styles from "./styles/RegisterForm.module.css";
+//import "./Register" nUNCA DEBES IMPORTAR EL PADRE DENTRO DEL COMPONENTE HIJO
 
-const LoginForm = () => {
+const RegisterForm = () => {
   return (
-    <div className={styles.loginFormContainer}>
-      <div className={styles.loginFormText}>
+    <div className={styles.RegisterFormContainer}>
+      <div className={styles.RegisterFormText}>
         <div className={styles.TextPrincipal}>
-        <h2>Login</h2> / <h4>sign up</h4>
+        <h2>Registrate</h2> / <h4><NavLink to="/login">Inicia Sesión</NavLink></h4>
         </div>
         <div>
           <p>No tienes cuenta?</p>
         </div>
       </div>
-      <form className={styles.logear}>
+      <form className={styles.registerForm}>
         <InputForm type="text" valor="Nombre" name="Your name" />
 
         <InputForm type="text" valor="Apellido" name="Surname" />
@@ -33,4 +34,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default RegisterForm;
