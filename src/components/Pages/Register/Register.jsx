@@ -20,11 +20,11 @@ const Register = () => {
       <div className={styles.RegisterImageContainer}>
         <img src={securityIcon} alt="" />
         <h1>Welcome</h1>
-        <p>You are on the alert information site.</p>
+        <p>Hello this is an information page</p>
         <ul>
-          <li>create your account if you don't have one</li>
-          <li>You can find the most dangerous places with us.</li>
-          <li>share your information with us</li>
+          <li>Create an account</li>
+          <li>This site will help you to be informed of the most dangerous places</li>
+          <li>Count on us</li>
         </ul>
       </div>
       <RegisterForm/>

@@ -21,10 +21,10 @@ const Login = () => {
       <div className={styles.LoginImageContainer}>
         <img src={securityIcon} alt="" />
         <h1>Welcome</h1>
-        <p>You are on the alert information site.</p>
+        <p>You are on the city alert information site</p>
         <ul>
-          <li>create your account if you don't have one</li>
-          <li>You can find the most dangerous places with us.</li>
+          <li>Here you can inform us about the crimes seen during the day.</li>
+          <li>with us you can find out about the most dangerous places</li>
           <li>share your information with us</li>
         </ul>
       </div>
