@@ -1,10 +1,38 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { GlobalContext } from "../../../GlobalContext";
 import InputForm from "../../shared/InputForm";
 import styles from "./styles/LoginForm.module.css";
 //import "./Login" nUNCA DEBES IMPORTAR EL PADRE DENTRO DEL COMPONENTE HIJO
 
 const LoginForm = () => {
+
+  const { IsLogin, setIsLogin } = useContext(GlobalContext);
+
+  const handleSubmitLogin = async (e) => {
+    e.preventDefault();
+    let request = {
+      Email: e.target.Email.value,
+      Password: e.target.Password.value
+    };
+    
+    let res = await fetch("https://localhost:7206/api/auth/login", {
+      method: "POST",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(request)
+    });
+
+    let getData = await res.json();
+
+    if(!getData.name) return;
+
+    setIsLogin(true);
+
+  }
+
   return (
     <div className={styles.loginFormContainer}>
       <div className={styles.loginFormText}>
@@ -15,7 +43,7 @@ const LoginForm = () => {
           <p>No tienes cuenta?</p>
         </div>
       </div>
-      <form className={styles.logear}>
+      <form onSubmit={handleSubmitLogin} className={styles.logear}>
         <InputForm type="email" valor="Email" name="Email" />
 
         <InputForm type="password" valor="Password" name="Password" />
