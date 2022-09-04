@@ -5,14 +5,15 @@ import LoginForm from './LoginForm.jsx';
 import securityIcon from "../../img/security-camera.svg";
 import { GlobalContext } from '../../../GlobalContext';
 import { useEffect } from 'react';
-import { Navigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
   const { IsLogin } = useContext(GlobalContext);
+  let navigate = useNavigate();
 
   useEffect(() => {
-    if(IsLogin) Navigate("/");
+    if(IsLogin) navigate("/");
   }, [IsLogin]);
 
   return (
