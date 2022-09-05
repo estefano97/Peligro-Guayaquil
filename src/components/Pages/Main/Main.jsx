@@ -29,16 +29,19 @@ const Main = () => {
     }, [IsLogin]);
 
   return (
+
+  <div className={styles.LoginBody}>
     <div>
         <Header/>
-        <div className={styles.CrimenContainer}>
+      <div className={styles.CrimenContainer}>
         {CrimenesList.map(el => <div className={styles.CrimenItem} key={el.id}>
           <h2>{el.tipo} - {el.fecha}</h2>
           <p>{el.provincia}-{el.canton}-{el.parroquia}</p>
         </div>)}
-        </div>
+      </div>
         <button onClick={handleLogOut}>Cerrar Sesión</button>
     </div>
+  </div>
   )
 }
 
