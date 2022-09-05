@@ -1,10 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
 //import "App.js" OTRA VEZ, NUNCA DEBES IMPORTAR EL PADRE DENTRO DEL COMPONENTE HIJO
 import styles from "./styles/Login.module.css";
 import LoginForm from './LoginForm.jsx';
 import securityIcon from "../../img/security-camera.svg";
+import { GlobalContext } from '../../../GlobalContext';
+import { useEffect } from 'react';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 const Login = () => {
+
+  const { IsLogin } = useContext(GlobalContext);
+  let navigate = useNavigate();
+
+  useEffect(() => {
+    if(IsLogin) navigate("/");
+  }, [IsLogin]);
+
   return (
     <div className={styles.LoginBody}>
       <div className={styles.login}>
