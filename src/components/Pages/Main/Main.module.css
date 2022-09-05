@@ -19,9 +19,9 @@
   }
 
 .CrimenItem {
-    background-color:rgb(126, 118, 118);
+    background-color: white;
     margin: 1rem auto;
-    border: 3px solid rgb(126, 118, 118);
+    border: 3px solid cornflowerblue;
     border-radius: 7px;
     width: 20rem;
     padding: .5rem 1rem;
@@ -37,7 +37,7 @@
 }
 
 .CrimenContainer h2{
-    color: white;
+    color: rgb(117, 113, 113);
 }
 
 button{
