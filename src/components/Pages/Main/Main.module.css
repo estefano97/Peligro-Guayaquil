@@ -1,0 +1,14 @@
+.CrimenItem {
+    margin: 1rem auto;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 20rem;
+    padding: .5rem 1rem;
+}
+
+.CrimenContainer{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

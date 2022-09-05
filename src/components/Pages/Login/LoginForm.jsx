@@ -16,7 +16,7 @@ const LoginForm = () => {
       Password: e.target.Password.value
     };
     
-    let res = await fetch("https://localhost:7206/api/auth/login", {
+    let res = await fetch("http://estefanochuquix-001-site1.ctempurl.com/api/auth/login", {
       method: "POST",
       headers: {
         'Accept': 'application/json',

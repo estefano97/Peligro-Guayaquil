@@ -4,7 +4,7 @@ import styles from "./styles/Register.module.css";
 import RegisterForm from './RegisterForm.jsx';
 import securityIcon from "../../img/security-camera.svg";
 import { GlobalContext } from '../../../GlobalContext';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
 
@@ -12,7 +12,7 @@ const Register = () => {
   let navigate = useNavigate();
 
   useEffect(() => {
-    if(!IsLogin) navigate("/");
+    if(IsLogin) navigate("/");
   }, [IsLogin]);
 
   return (

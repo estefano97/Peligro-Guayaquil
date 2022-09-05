@@ -8,6 +8,8 @@ const GlobalContextProvider = (props) => {
     window.localStorage.getItem("IsLogin") === "true" ? true : false
   );
 
+  const [ModalAdd, setModalAdd] = useState(false);
+
   useEffect(() => {
     console.log(IsLogin);
     window.localStorage.setItem("IsLogin", IsLogin);
@@ -15,7 +17,7 @@ const GlobalContextProvider = (props) => {
   
 
   return (
-    <GlobalContext.Provider value={{IsLogin, setIsLogin}}>
+    <GlobalContext.Provider value={{IsLogin, setIsLogin, ModalAdd, setModalAdd}}>
         {props.children}
     </GlobalContext.Provider>
   )
